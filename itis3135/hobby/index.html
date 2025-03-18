@@ -48,7 +48,7 @@
             padding-bottom: 0;
            margin-bottom: 0;
         }
-        header h1 {
+        .header h1 {
             margin: 0;
             padding:10px 0;
         }
@@ -147,8 +147,9 @@
                 <figure>
                 <img src="images/hinkingwhat1.jpg" alt="Hiking in the mountains" width="500">
                 <figcaption>A hiker on a moutain trail enjoying the views!</figcaption>
-                <p><i>AI Prompt: "Give me a photorealistic image of a hiker on a mountain."</i></p>
                 </figure>
+                <p><i>AI Prompt: "Give me a photorealistic image of a hiker on a mountain."</i></p>
+
             
                 <ul>
                  <h3>Hiking Fun Facts!</h3> 
@@ -163,13 +164,15 @@
             <figure>
                 <img src="images/who1hobby.jpg" alt="Hiker finding a lake" width="500">
                 <figcaption>A hiker on a stumbling upon a lake</figcaption>
-                <p><i>AI Prompt: "Give me a photorealistic image of a hiker finding a lake on a trail."</i></p>
             </figure>
+            <p><i>AI Prompt: "Give me a photorealistic image of a hiker finding a lake on a trail."</i></p>
+
                 <figure>
                     <img src="images/who2hobby.jpg" alt="Hiker finding a butterfly" width="500">
                     <figcaption>A hiker seeing a beautiful butterfly!</figcaption>
-                    <p><i>AI Prompt: "Give me a photorealistic image of a hiker finding a butterfly on a trail."</i></p>
                 </figure>
+                <p><i>AI Prompt: "Give me a photorealistic image of a hiker finding a butterfly on a trail."</i></p>
+
         </section>
         <section id="why">
             <h2>Why Hike?</h2>
@@ -186,13 +189,15 @@
                 <figure>
                     <img src="images/why1hobby.jpg" alt="Hiking Group" width="500">
                     <figcaption>A group of hikers!</figcaption>
-                    <p><i>AI Prompt: "Give me a photorealistic image of a group of hikers."</i></p>
                 </figure>
+                <p><i>AI Prompt: "Give me a photorealistic image of a group of hikers."</i></p>
+
                 <figure>
                     <img src="images/why2hobby.jpg" alt="Couple" width="500">
                     <figcaption>A happy couple hiking!</figcaption>
-                    <p><i>AI Prompt: "Give me a photorealistic image of a couple hiking."</i></p>
                 </figure>
+                <p><i>AI Prompt: "Give me a photorealistic image of a couple hiking."</i></p>
+
             
         </section>
         <section id="when">
@@ -204,17 +209,19 @@
                     <figure>
                         <img src="images/when1hobby.jpg" alt="Fall" width="500">
                         <figcaption>Hiking during the fall!</figcaption>
-                        <p><i>AI Prompt: "Give me a photorealistic image of hiking during the fall."</i></p>
                     </figure>
+                    <p><i>AI Prompt: "Give me a photorealistic image of hiking during the fall."</i></p>
+
                     <figure>
                         <img src="images/when2hobby.jpg" alt="Spring" width="500">
                         <figcaption>Hiking during the spring!</figcaption>
-                        <p><i>AI Prompt: "Give me a photorealistic image of hiking during the spring with blooming flowers."</i></p>
-                    </figure>    
+                    </figure>  
+                    <p><i>AI Prompt: "Give me a photorealistic image of hiking during the spring with blooming flowers."</i></p>
+  
         </section>
         <section id="where">
             <h2>Where to hike?</h2>
-            <table border="1">
+            <table>
                 <tr>
                     <th>Location</th>
                     <th>Difficulty</th>
@@ -253,8 +260,9 @@
                 <figure>
                     <img src="images/where1hobby.jpg" alt="Hiking in Charlotte" width="500">
                     <figcaption>People Hiking on a Trail close to downtown Charlotte!</figcaption>
-                    <p><i>AI Prompt: "Give me a photorealistic image of hikers in Charlotte, North Carolina."</i></p>
                 </figure>   
+                <p><i>AI Prompt: "Give me a photorealistic image of hikers in Charlotte, North Carolina."</i></p>
+
         </section>
         <section id="how">
             <h2>Getting Started is EASY!</h2>
@@ -264,13 +272,15 @@
             <figure>
                 <img src="images/how1.jpg" alt="Map" width="500">
                 <figcaption>A map of a trail</figcaption>
-                <p><i>AI Prompt: "Give me a photorealistic image of a hiking map."</i></p>
             </figure>   
+            <p><i>AI Prompt: "Give me a photorealistic image of a hiking map."</i></p>
+
             <figure>
                 <img src="images/how2.jpg" alt="Beginner Hiker" width="500">
                 <figcaption>A Beginner Hiker!</figcaption>
-                <p><i>AI Prompt: "Give me a photorealistic image of a beginner hiker."</i></p>
             </figure>   
+            <p><i>AI Prompt: "Give me a photorealistic image of a beginner hiker."</i></p>
+
         </section>
         <section id="ai">
             <h2>Ai for Visibility</h2>
@@ -290,13 +300,13 @@
         //select all "nav" links
             const navLinks = document.querySelectorAll('nav a');
             //go through all nav links
-            navLinks.forEach(link => {
+            navLinks.forEach((link) => {
                 link.addEventListener('click', function (e) {
                     e.preventDefault();
                     //get section id
                     const targetId = this.getAttribute('href').substring(1);
                     //hide all sections
-                    document.querySelectorAll('section').forEach(section => {
+                    document.querySelectorAll('section').forEach((section) => {
                         section.classList.remove('active');
                     });
                     //show the section that is clicked 
