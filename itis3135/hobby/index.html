@@ -52,7 +52,9 @@
             margin: 0;
             padding:10px 0;
         }
-        
+        main {
+            flex:1;
+        }
        #who{
         background-color: #B0DAF1;
         padding:20px;
@@ -83,9 +85,18 @@
         border-radius:10px;
         text-align: center;
        }
+       #ai{
+        background-color: #F3DFA2;
+        padding:20px;
+        border-radius:10px;
+        text-align: center;
+        min-height: calc(100vh - 100px);
+       }
        #why{
         background-color: #FF9FB2;
-        
+        padding:20px;
+        border-radius:10px;
+        text-align: center;
        }
         nav a {
             text-decoration: none;
@@ -100,7 +111,7 @@
         nav a:hover {
             text-decoration:line-through;
         }
-        
+
         section {
             display: none;
         }
@@ -125,6 +136,8 @@
             <a href="#how">How to Start?</a>
             ~~
             <a href="#why">Why Hike?</a>
+            ~~
+            <a href="#ai">AI Prompts</a>
         </nav>
     </header>
     <main>
@@ -258,6 +271,13 @@
                 <figcaption>A Beginner Hiker!</figcaption>
                 <p><i>AI Prompt: "Give me a photorealistic image of a beginner hiker."</i></p>
             </figure>   
+        </section>
+        <section id="ai">
+            <h2>Ai for Visibility</h2>
+                <p>AI Model:DeepThink 1</p>
+                <p>AI Prompt: I am currently working on a website using sections that act like a different page for each section. Using Javascripy and CSS I want to hide all sections except the one that is clicked on. For example, I have a who and where section, when clicked on the who section it is the only one displayed on the screen. </p>
+            <h2>AI Images</h2>
+            <p>All images were created using Gemini 2.0 Flash</p>
         </section>
     </main>
 
