@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camron Patel | Charming Panda | ITIS 3135 | Tables</title>
+    <link rel = "stylesheet" href="styles/default.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Macondo&family=UnifrakturCook:wght@700&display=swap" rel="styles/default.css">
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <style>
+         body {
+      background-color: #fff7e6; /* Light warm background */
+      font-family: Arial, sans-serif;
+      color: #4b2e1e;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1em;
+    }
+
+    th, td {
+      padding: 0.75em;
+      text-align: left;
+      border: 1px solid #d8a976;
+    }
+
+    table tr:first-child {
+      background-color: #b05e27;
+      color: #fff;
+    }
+
+    table tr:nth-child(even):not(:first-child) {
+      background-color: #ffe0b3;
+    }
+
+    table tr:nth-child(odd):not(:first-child) {
+      background-color: #ffd1a6;
+    }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+    <main>
+        <h2>Tables</h2>
+        <h3>My Tabular Data</h3>
+<ol>
+  <li>D.I. von Briesen - dvonbri1@uncc.edu - 1</li>
+  <li>Esam Abdullah - eabdullah@gmail.com - 31</li>
+  <li>Medina Gomez - gomez_med8@yahoo.com - 3</li>
+  <li>Camron Patel - patelcamron@gmail.com - 5</li>
+  <li>John Cena - johncena@yahoo.com - 8</li>
+  <li>Homer Simpson - homers@outlook.com - 20</li>
+  <li>John Doe - jdoe@gmail.com - 15</li>
+</ol>
+<h3>Employee Data in Simple Table</h3>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Years of Service</th>
+  </tr>
+  <tr><td>D.I. von Briesen</td><td>dvonbri1@uncc.edu</td><td>1</td></tr>
+  <tr><td>Esam Abdullah</td><td>eabdullah@gmail.com</td><td>31</td></tr>
+  <tr><td>Medina Gomez</td><td>gomez_med8@yahoo.com</td><td>3</td></tr>
+  <tr><td>Camron Patel</td><td>patelcamron@gmail.com</td><td>5</td></tr>
+  <tr><td>John Cena</td><td>johncena@yahoo.com</td><td>8</td></tr>
+  <tr><td>Homer Simpson</td><td>homers@outlook.com</td><td>20</td></tr>
+  <tr><td>John Doe</td><td>jdoe@gmail.com</td><td>15</td></tr>
+</table>
+
+<h3>Employee Data in Complex Table</h3>
+<figure>
+  <figcaption>Employee Information</figcaption>
+  <table>
+    <tr>
+      <th>Category</th>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Years of Service</th>
+      <th>Monthly Salary</th>
+    </tr>
+    <tr>
+      <td rowspan="1">Sales</td>
+      <td>D.I. von Briesen</td>
+      <td>dvonbri1@uncc.edu</td>
+      <td>1</td>
+      <td>$83,333.33</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Marketing</td>
+      <td>Esam Abdullah</td>
+      <td>eabdullah@gmail.com</td>
+      <td>31</td>
+      <td>$2,083.33</td>
+    </tr>
+    <tr>
+      <td>Medina Gomez</td>
+      <td>gomez_med8@yahoo.com</td>
+      <td>3</td>
+      <td>$4,583.33</td>
+    </tr>
+    <tr>
+      <td>Camron Patel</td>
+      <td>patelcamron@gmail.com</td>
+      <td>5</td>
+      <td>$3,750.00</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Analytics</td>
+      <td>John Cena</td>
+      <td>johncena@yahoo.com</td>
+      <td>12</td>
+      <td>$4,166.67</td>
+    </tr>
+    <tr>
+      <td>Homer Simpson</td>
+      <td>homers@outlook.com</td>
+      <td>20</td>
+      <td>$5,000.00</td>
+    </tr>
+    <tr>
+      <td>John Doe</td>
+      <td>jdoe@gmail.com</td>
+      <td>15</td>
+      <td>$6,250.00</td>
+    </tr>
+    <tr>
+      <th colspan="3">Total Years of Service</th>
+      <td>87</td>
+      <td>$109,166.66</td>
+    </tr>
+  </table>
+</figure>
+    </main>
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script>
+       
+    </script>
+    <script src="scripts/HTMLInclude.min.js"></script>
+</body>
+</html>
