@@ -20,6 +20,7 @@ body{
     margin:auto;
     max-width:900;
     width:95%;
+    flex: 1;
 }
 
 a{
@@ -70,6 +71,8 @@ footer{
     font-style: normal;
     color: black;
     text-align:center;
+    width:100vw;
+    margin-top: auto;
 }
 .websites{
     background-color:black;

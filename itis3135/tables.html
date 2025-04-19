@@ -11,36 +11,50 @@
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
     <style>
          body {
-      background-color: #fff7e6; /* Light warm background */
+      background-color: #fff7e6; 
       font-family: Arial, sans-serif;
       color: #4b2e1e;
     }
 
     table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 1em;
-    }
+  border-collapse: collapse;
+  margin: 2rem auto;
+  width: 90%;
+  max-width: 1000px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
 
-    th, td {
-      padding: 0.75em;
-      text-align: left;
-      border: 1px solid #d8a976;
-    }
+th, td {
+  padding: 12px 15px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
 
-    table tr:first-child {
-      background-color: #b05e27;
-      color: #fff;
-    }
+thead tr {
+  background-color: #d2691e; 
+  color: #fff;
+}
 
-    table tr:nth-child(even):not(:first-child) {
-      background-color: #ffe0b3;
-    }
+tbody tr:nth-child(even) {
+  background-color: #fce3c3;
+}
+tbody tr:nth-child(odd) {
+  background-color: #fff0dc;
+}
 
-    table tr:nth-child(odd):not(:first-child) {
-      background-color: #ffd1a6;
-    }
 
+tfoot th {
+  background-color: #f4a460;
+  color: #333;
+}
+
+
+caption {
+  caption-side: top;
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
     </style>
 </head>
 <body>
