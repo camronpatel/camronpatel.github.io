@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f7f9fa;
+    background-color: #fefefe;
     color: #333;
     margin: 0;
     padding: 0;
@@ -8,7 +8,7 @@ body {
   
   header, footer {
     background-color: #2b6777;
-    color: white;
+    color: rgb(30, 22, 113);
     text-align: center;
     padding: 1em 0;
   }
@@ -24,7 +24,7 @@ body {
   }
   
   nav ul.navbar li a {
-    color: white;
+    color: rgb(74, 181, 90);
     text-decoration: none;
     font-weight: bold;
   }
@@ -37,13 +37,13 @@ body {
     margin-bottom: 1.5em;
   }
   
-  /* Accordion Styling */
+
   #accordion {
     width: 80%;
     margin: 2em auto;
   }
   
-  /* AJAX Section */
+
   #ajax-section {
     margin-top: 2em;
   }
@@ -66,11 +66,18 @@ body {
     font-family: monospace;
   }
   
-  pre {
-    background-color: #eef;
+  .code-block {
+    background-color: rgb(175, 175, 231);         
+    border: 1px solid black;         
+    border-radius: 4px;
     padding: 1em;
-    border-radius: 5px;
-    white-space: pre-wrap;
+    font-family: monospace;
+    white-space: pre-wrap;          
+    margin-bottom: 1em;            
+  }
+  code {
+    color: black !important;
+    font-family: monospace;
   }
   nav ul li a:hover {
     background-color: red;

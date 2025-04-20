@@ -1,16 +1,27 @@
-//Jquery 
+//jQuery and accordion
 document.addEventListener("DOMContentLoaded", () => {
-    if (typeof $ !== "undefined" && $("#accordion").length) {
-      $("#accordion").accordion();
+    if (typeof $ !== "undefined") {
+      if ($("#accordion").length) {
+        $("#accordion").accordion({
+          collapsible: true,
+          heightStyle: "content"
+        });
+      }
+      if ($("#faq-accordion").length) {
+        $("#faq-accordion").accordion({
+          collapsible: true,
+          heightStyle: "content"
+        });
+      }
     }
   
-    //AJAX: Load a random tip
+    //AJAX: Load random tip
     const tipBtn = document.getElementById("load-tip");
     const tipOutput = document.getElementById("js-tip");
     if (tipBtn && tipOutput) {
       tipBtn.addEventListener("click", () => {
         fetch("tips.json")
-          .then(response => response.json())
+          .then(res => res.json())
           .then(data => {
             const tip = data.tips[Math.floor(Math.random() * data.tips.length)];
             tipOutput.textContent = tip;
@@ -21,39 +32,20 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     }
   
-    // Quiz 
+    //Quiz 
     const quizForm = document.getElementById("quiz-form");
     const quizResult = document.getElementById("quiz-result");
     if (quizForm && quizResult) {
-      quizForm.addEventListener("submit", function(e) {
+      quizForm.addEventListener("submit", e => {
         e.preventDefault();
         let score = 0;
         if (quizForm.q1.value === "let") score++;
         if (quizForm.q2.value === "function") score++;
-        quizResult.textContent = `You scored ${score}/2`;
-      });
-    }
-  
-    //Code Editor
-    const runJsBtn = document.getElementById("run-js");
-    const codeInput = document.getElementById("code-input");
-    const codeOutput = document.getElementById("code-output");
-    if (runJsBtn && codeInput && codeOutput) {
-      runJsBtn.addEventListener("click", () => {
-        try {
-          const result = eval(codeInput.value);
-          codeOutput.textContent = result !== undefined ? result : "JS executed.";
-        } catch (err) {
-          codeOutput.textContent = `Error: ${err.message}`;
-        }
-      });
-    }
-  
-    const renderHtmlBtn = document.getElementById("render-html");
-    const htmlOutput = document.getElementById("html-output");
-    if (renderHtmlBtn && codeInput && htmlOutput) {
-      renderHtmlBtn.addEventListener("click", () => {
-        htmlOutput.srcdoc = codeInput.value;
+        if (quizForm.q3.value === "012") score++;
+        if (quizForm.q4.value === "sum") score++;
+        if (quizForm.q5.value === "yes") score++;
+
+        quizResult.textContent = `You scored ${score}/5`;
       });
     }
   });

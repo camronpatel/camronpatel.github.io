@@ -1,13 +1,16 @@
 {
     "tips": [
+        "Remeber to take breaks when coding!",
       "Use === instead of == to avoid type coercion.",
       "Declare variables with let and const, not var.",
-      "Always handle errors in asynchronous code.",
       "Use template literals for cleaner string formatting.",
       "Semicolons are optional in JavaScript!",
       "JavaScript is case-sensitive. watchYourCaps();",
-      "Use meaningful Varibale names!",
-      "Using console.log() is very helpful when testing your code!"
+      "Use meaningful variable and function names!",
+      "Using console.log() is very helpful when testing your code!",
+      "Indent your code consistently so it is easy to read.",
+      "Write pseudo-code before coding to plan your logic.",
+      "Do not repeat yourself when coding."
     ]
   }
   

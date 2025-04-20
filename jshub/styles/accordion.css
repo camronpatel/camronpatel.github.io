@@ -43,3 +43,8 @@
     display: none;
   }
   
+  #faq-accordion {
+    border: 1px solid #2b6777;
+    border-radius: 4px;
+    overflow: hidden;
+  }

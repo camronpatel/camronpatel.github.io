@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>JS Lessons</title>
+  <title>Lessons | JavaScript Learning Hub</title>
   <link rel="stylesheet" href="./styles/styles.css">
   <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 
@@ -23,71 +23,67 @@
   <main>
     <h2>JavaScript Lessons</h2>
 
-    <article>
+ 
       <h3>Variables</h3>
-      <p>Variables store data values. JavaScript uses <code>var</code>, <code>let</code>, and <code>const</code> to declare variables. <code>let</code> is block‑scoped and is preferred over <code>var</code>. <code>const</code> is used for variables that do not change.</p>
-      <pre><code>let age = 25;
-const name = "Aaria";
-var score = 90;</code></pre>
-    </article>
+      <p>Variables store data values. JavaScript uses <code>let</code> and <code>const</code> to declare variables. <code>let</code> is block-scoped and is allows the variable to be changed <code>const</code> is used for variables that do not change.</p>
+      <figure class="code-block"><code>let age = 25;
+const name = "Aaria";</code></figure>
+      
 
-    <article>
+
+    
       <h3>Data Types</h3>
       <p>JavaScript has several data types including strings, numbers, booleans, arrays, and objects.</p>
-      <pre><code>let text = "Hello";        // String
+
+        <figure class="code-block"><code>let text = "Hello";          // String
 let number = 5;              // Number
 let isHappy = true;          // Boolean
 let list = [1, 2, 3];        // Array
-let person = {name: "Cam", age: 20}; // Object</code></pre>
-    </article>
+let person = {name: "Cam", age: 20}; // Object</code></figure>
 
-    <article>
+
       <h3>Functions</h3>
-      <p>Functions group code into reusable blocks. They are defined using the <code>function</code> keyword or arrow syntax.</p>
-      <pre><code>function greet(name) {
-  return "Hello, " + name + "!";
-}
+      <p>Functions group code into reusable blocks. Functions can take in inputs called parameters and return a value. They are defined using the <code>function</code> keyword.</p>
+      <figure class="code-block"><code>function greet(name) {
+        return "Hello, " + name + "!";
+      } </code></figure>
+      <p>Here when <code>greet('Aaria')</code> is used the returned value is Hello, Aaria !</p>
 
-const greetArrow = (name) => "Hi, " + name + "!";</code></pre>
-    </article>
-
-    <article>
       <h3>Conditionals</h3>
-      <p>Conditional statements control the flow of your program using <code>if</code>, <code>else if</code>, and <code>else</code>.</p>
-      <pre><code>let score = 85;
-if (score >= 90) {
-  console.log("A");
-} else if (score >= 80) {
-  console.log("B");
-} else {
-  console.log("C or below");
-}</code></pre>
-    </article>
+      <p>Conditional statements control the flow of your the program using <code>if</code>, <code>else if</code>, and <code>else</code>.</p>
+        <figure class="code-block"><code>    let score = 85;
 
-    <article>
+    if (score >= 90) {
+        console.log("A");
+     } else if (score >= 80) {
+        console.log("B");
+    } else {
+        console.log("C or below");
+    }</code></figure>  
+<p>Here since <code>score = 85</code> the console will return "B".</p>
+
+
       <h3>Loops</h3>
       <p>Loops execute code multiple times. Common types include <code>for</code>, <code>while</code>, and <code>forEach</code>.</p>
-      <pre><code>for (let i = 0; i < 3; i++) {
-  console.log(i);
-}
-
+      <figure class="code-block"><code>for (let i = 0; i < 3; i++) {
+    console.log(i);
+    }
+//using while    
 let i = 0;
 while (i < 3) {
-  console.log(i);
-  i++;
-}</code></pre>
-    </article>
-
-    <article>
+    console.log(i);
+    i++;
+     }</code></figure>
+     <p>This is an example where both the <code>for</code> loop and <code>while</code> loop will output 0 1 2.</p>
+   
       <h3>Events</h3>
       <p>Events let you respond to user actions like clicks or keypresses.</p>
-      <pre><code>document.getElementById("btn").addEventListener("click", function() {
-  alert("Button clicked!");
-});</code></pre>
-    </article>
+      <figure class="code-block"><code>document.getElementById("btn").addEventListener("click", function() {
+        alert("Button clicked!");
+        });</code></figure>
   </main>
   <footer>
-    <p>&copy; 2025 JavaScript Learning Hub |
+    <p>&copy; 2025 JavaScript Learning Hub 
       
   </footer>
 </body>
