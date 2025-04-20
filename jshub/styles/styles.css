@@ -76,7 +76,7 @@ body {
     margin-bottom: 1em;            
   }
   code {
-    color: black !important;
+    color: black;
     font-family: monospace;
   }
   nav ul li a:hover {

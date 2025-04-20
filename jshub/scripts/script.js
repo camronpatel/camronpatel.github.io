@@ -21,8 +21,8 @@ document.addEventListener("DOMContentLoaded", () => {
     if (tipBtn && tipOutput) {
       tipBtn.addEventListener("click", () => {
         fetch("tips.json")
-          .then(res => res.json())
-          .then(data => {
+          .then((res) => res.json())
+          .then((data) => {
             const tip = data.tips[Math.floor(Math.random() * data.tips.length)];
             tipOutput.textContent = tip;
           })
@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const quizForm = document.getElementById("quiz-form");
     const quizResult = document.getElementById("quiz-result");
     if (quizForm && quizResult) {
-      quizForm.addEventListener("submit", e => {
+      quizForm.addEventListener("submit", (e) => {
         e.preventDefault();
         let score = 0;
         if (quizForm.q1.value === "let") score++;
