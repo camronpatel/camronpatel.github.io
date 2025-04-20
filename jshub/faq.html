@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FAQ | JavaScript Learning Hub</title>
+  <link rel="stylesheet" href="./styles/styles.css" />
+ <!-- Script for Jquery Library -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- Script for Jquery UI -->
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script src="../jshub/scripts/script.js" defer></script>
+  <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>JavaScript Learning Hub</h1>
+    <nav>
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="lessons.html">Lessons</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Frequently Asked Questions</h2>
+
+    <section>
+      <h3>What is JavaScript used for?</h3>
+      <p>JavaScript is a programming language that is used in web development. It is used to create interactive web pages, build server-side applications, and more.</p>
+    </section>
+
+    <section>
+      <h3>What's the difference between <code>let</code> and <code>const</code>?</h3>
+      <p><code>let</code> assigns a variable that can be reassigned, while <code>const</code> is a variable that connot be reassigned</p>
+    </section>
+
+    <section>
+      <h3>How do I debug my JavaScript code?</h3>
+      <p>You can use <code>console.log()</code> to print values, at certain points in your code for helpful debugging.</p>
+    </section>
+
+    <section>
+      <h3>What is an event listener?</h3>
+      <p>An event listener waits for a specific event (like a click) and runs a function when that event occurs. Example:</p>
+      <pre><code>element.addEventListener('click', () => {
+  console.log('Clicked!');
+});</code></pre>
+    </section>
+
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 JavaScript Learning Hub |
+      
+    </p>
+  </footer>
+
+  <!-- OPTIONAL: JS to toggle “active-question” class -->
+  <!--
+  <script>
+    document.querySelectorAll('main h3').forEach(h3 => {
+      h3.addEventListener('click', () => {
+        // clear others
+        document.querySelectorAll('main h3').forEach(h=>h.classList.remove('active-question'));
+        h3.classList.add('active-question');
+      });
+    });
+  </script>
+  -->
+</body>
+</html>
