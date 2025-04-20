@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header, footer {
+    background-color: #2b6777;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+  }
+  
+  nav ul.navbar {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+    background-color: #2b6777;
+  }
+  
+  nav ul.navbar li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  main {
+    padding: 2em;
+  }
+  
+  article {
+    margin-bottom: 1.5em;
+  }
+  
+  /* Accordion Styling */
+  #accordion {
+    width: 80%;
+    margin: 2em auto;
+  }
+  
+  /* AJAX Section */
+  #ajax-section {
+    margin-top: 2em;
+  }
+  
+  button {
+    padding: 0.5em 1em;
+    background-color: #2b6777;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #406882;
+  }
+  
+  textarea {
+    width: 100%;
+    font-family: monospace;
+  }
+  
+  pre {
+    background-color: #eef;
+    padding: 1em;
+    border-radius: 5px;
+    white-space: pre-wrap;
+  }
+  nav ul li a:hover {
+    background-color: red;
+  }

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JS Quiz</title>
+  <link rel="stylesheet" href="./styles/styles.css" />
+  <link rel="stylesheet" href="./styles/accordion.css" />
+  <!-- Script for Jquery Library -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- Script for Jquery UI -->
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script src="../jshub/scripts/script.js" defer></script>
+  <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+  
+</head>
+<body>
+  <header>
+    <h1>JavaScript Learning Hub</h1>
+    <nav>
+      <ul class="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="lessons.html">Lessons</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="practice.html">Practice</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h2>Quiz</h2>
+    <form id="quiz-form">
+      <p>1. What is the keyword to declare a variable?</p>
+      <label><input type="radio" name="q1" value="let"> let</label>
+      <label><input type="radio" name="q1" value="def"> def</label>
+
+      <p>2. How do you define a function?</p>
+      <label><input type="radio" name="q2" value="function"> function</label>
+      <label><input type="radio" name="q2" value="fun"> fun</label>
+
+      <button type="submit">Submit</button>
+    </form>
+    <p id="quiz-result"></p>
+  </main>
+  <footer>
+    <p>&copy; 2025 JavaScript Learning Hub |
+     
+    </p>
+  </footer>
+</body>
+</html>

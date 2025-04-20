@@ -1,0 +1,13 @@
+{
+    "tips": [
+      "Use === instead of == to avoid type coercion.",
+      "Declare variables with let and const, not var.",
+      "Always handle errors in asynchronous code.",
+      "Use template literals for cleaner string formatting.",
+      "Semicolons are optional in JavaScript!",
+      "JavaScript is case-sensitive. watchYourCaps();",
+      "Use meaningful Varibale names!",
+      "Using console.log() is very helpful when testing your code!"
+    ]
+  }
+  

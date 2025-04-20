@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JS Lessons</title>
+  <link rel="stylesheet" href="./styles/styles.css">
+  <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+  <header>
+    <h1>JavaScript Learning Hub</h1>
+    <nav>
+      <ul class="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="lessons.html">Lessons</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="practice.html">Practice</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h2>JavaScript Lessons</h2>
+
+    <article>
+      <h3>Variables</h3>
+      <p>Variables store data values. JavaScript uses <code>var</code>, <code>let</code>, and <code>const</code> to declare variables. <code>let</code> is block‑scoped and is preferred over <code>var</code>. <code>const</code> is used for variables that do not change.</p>
+      <pre><code>let age = 25;
+const name = "Aaria";
+var score = 90;</code></pre>
+    </article>
+
+    <article>
+      <h3>Data Types</h3>
+      <p>JavaScript has several data types including strings, numbers, booleans, arrays, and objects.</p>
+      <pre><code>let text = "Hello";        // String
+let number = 5;              // Number
+let isHappy = true;          // Boolean
+let list = [1, 2, 3];        // Array
+let person = {name: "Cam", age: 20}; // Object</code></pre>
+    </article>
+
+    <article>
+      <h3>Functions</h3>
+      <p>Functions group code into reusable blocks. They are defined using the <code>function</code> keyword or arrow syntax.</p>
+      <pre><code>function greet(name) {
+  return "Hello, " + name + "!";
+}
+
+const greetArrow = (name) => "Hi, " + name + "!";</code></pre>
+    </article>
+
+    <article>
+      <h3>Conditionals</h3>
+      <p>Conditional statements control the flow of your program using <code>if</code>, <code>else if</code>, and <code>else</code>.</p>
+      <pre><code>let score = 85;
+if (score >= 90) {
+  console.log("A");
+} else if (score >= 80) {
+  console.log("B");
+} else {
+  console.log("C or below");
+}</code></pre>
+    </article>
+
+    <article>
+      <h3>Loops</h3>
+      <p>Loops execute code multiple times. Common types include <code>for</code>, <code>while</code>, and <code>forEach</code>.</p>
+      <pre><code>for (let i = 0; i < 3; i++) {
+  console.log(i);
+}
+
+let i = 0;
+while (i < 3) {
+  console.log(i);
+  i++;
+}</code></pre>
+    </article>
+
+    <article>
+      <h3>Events</h3>
+      <p>Events let you respond to user actions like clicks or keypresses.</p>
+      <pre><code>document.getElementById("btn").addEventListener("click", function() {
+  alert("Button clicked!");
+});</code></pre>
+    </article>
+  </main>
+  <footer>
+    <p>&copy; 2025 JavaScript Learning Hub |
+      
+  </footer>
+</body>
+</html>

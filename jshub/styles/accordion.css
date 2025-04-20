@@ -1,0 +1,45 @@
+#accordion {
+    border: 1px solid #2b6777;
+    border-radius: 4px;
+    width: 80%;
+    margin: 2em auto;
+    overflow: hidden;
+  }
+  
+  .ui-accordion-header {
+    background-color: #bdc3c7;    
+    color: #2b2b2b;               
+    font-family: Georgia, serif;
+    padding: 0.75em 1em;
+    cursor: pointer;
+    border-bottom: 1px solid #2b6777;
+    margin: 0;
+  }
+  
+  .ui-accordion-header:first-child {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+  }
+  
+  .ui-accordion-header-active,
+  .ui-state-active {
+    background-color: #a8d5ba;    
+    color: #2b2b2b;
+  }
+  
+  .ui-accordion-content {
+    background-color: #f0f8ff;
+    color: #2b2b2b;
+    padding: 1em;
+    border-top: none;
+  }
+  
+  .ui-accordion-content:last-child {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
+  
+  .ui-accordion-header .ui-icon {
+    display: none;
+  }
+  
