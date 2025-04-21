@@ -24,7 +24,7 @@ body {
   }
   
   nav ul.navbar li a {
-    color: rgb(74, 181, 90);
+    color: rgb(0, 0, 0);
     text-decoration: none;
     font-weight: bold;
   }
@@ -80,5 +80,5 @@ body {
     font-family: monospace;
   }
   nav ul li a:hover {
-    background-color: red;
+    background-color: rgb(176, 109, 109);
   }
