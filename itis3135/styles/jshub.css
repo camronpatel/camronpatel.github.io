@@ -82,3 +82,24 @@ body {
   nav ul li a:hover {
     background-color: rgb(176, 109, 109);
   }
+
+
+  @media (max-width: 600px) {
+    main {
+      width: 95%;
+      margin: 1rem auto;
+    }
+  }
+  
+  @media (min-width: 601px) and (max-width: 1024px) {
+    main {
+      width: 92%;
+    }
+  }
+  
+  @media (min-width: 1025px) {
+    main {
+      width: 90%;
+    }
+  }
+  
