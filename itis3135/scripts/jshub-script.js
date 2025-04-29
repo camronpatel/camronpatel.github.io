@@ -23,6 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
         fetch("tips.json")
           .then((res) => res.json())
           .then((data) => {
+            //get tip randomly from json file
             const tip = data.tips[Math.floor(Math.random() * data.tips.length)];
             tipOutput.textContent = tip;
           })
@@ -39,12 +40,13 @@ document.addEventListener("DOMContentLoaded", () => {
       quizForm.addEventListener("submit", (e) => {
         e.preventDefault();
         let score = 0;
+        //correct answers 
         if (quizForm.q1.value === "let") score++;
         if (quizForm.q2.value === "function") score++;
         if (quizForm.q3.value === "012") score++;
         if (quizForm.q4.value === "sum") score++;
         if (quizForm.q5.value === "yes") score++;
-
+        //output
         quizResult.textContent = `You scored ${score}/5`;
       });
     }
