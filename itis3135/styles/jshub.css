@@ -1,105 +1,127 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #E1EFF6;
-    color: #333;
-    margin: 0;
-    padding: 0;
-  }
-  
-  header, footer {
-    background-color: #6B7F82;
-    color: white;
-    text-align: center;
-    padding: 1em 0;
-  }
-  
-  nav ul.navbar {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    gap: 1.5em;
-    background-color: #6B7F82;
-  }
-  
-  nav ul.navbar li a {
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
+  font-family: Arial, sans-serif;
+  background-color: #E1EFF6;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* =============================
+ Header & Navigation
+ ============================= */
+header, footer {
+  /* Default background shared by header & footer.  
+     Footer is overridden later to improve contrast. */
+  background-color: #6B7F82;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 1em 0;
+}
+
+nav ul.navbar {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1.5em;
+  background-color: #6B7F82;
+}
+
+nav ul.navbar li a {
+  color: #000000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* =============================
+ Main Content
+ ============================= */
+main {
+  padding: 2em;
+}
+
+article {
+  margin-bottom: 1.5em;
+}
+
+#accordion {
+  width: 80%;
+  margin: 2em auto;
+}
+
+#ajax-section {
+  margin-top: 2em;
+}
+
+button {
+  padding: 0.5em 1em;
+  background-color: #2b6777;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #406882;
+}
+
+textarea {
+  width: 100%;
+  font-family: monospace;
+}
+
+.code-block {
+  background-color: rgb(175, 175, 231);
+  border: 1px solid #000000;
+  border-radius: 4px;
+  padding: 1em;
+  font-family: monospace;
+  white-space: pre-wrap;
+  margin-bottom: 1em;
+}
+
+code {
+  color: #000000;
+  font-family: monospace;
+}
+
+nav ul li a:hover {
+  background-color: rgb(176, 109, 109);
+}
+
+/* =============================
+ Responsive Layout
+ ============================= */
+@media (max-width: 600px) {
   main {
-    padding: 2em;
-  }
-  
-  article {
-    margin-bottom: 1.5em;
-  }
-  
-
-  #accordion {
-    width: 80%;
-    margin: 2em auto;
-  }
-  
-
-  #ajax-section {
-    margin-top: 2em;
-  }
-  
-  button {
-    padding: 0.5em 1em;
-    background-color: #2b6777;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #406882;
-  }
-  
-  textarea {
-    width: 100%;
-    font-family: monospace;
-  }
-  
-  .code-block {
-    background-color: rgb(175, 175, 231);         
-    border: 1px solid black;         
-    border-radius: 4px;
-    padding: 1em;
-    font-family: monospace;
-    white-space: pre-wrap;          
-    margin-bottom: 1em;            
-  }
-  code {
-    color: black;
-    font-family: monospace;
-  }
-  nav ul li a:hover {
-    background-color: rgb(176, 109, 109);
-  }
-
-
-  @media (max-width: 600px) {
-    main {
       width: 95%;
       margin: 1rem auto;
-    }
   }
-  
-  @media (min-width: 601px) and (max-width: 1024px) {
-    main {
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  main {
       width: 92%;
-    }
   }
-  
-  @media (min-width: 1025px) {
-    main {
+}
+
+@media (min-width: 1025px) {
+  main {
       width: 90%;
-    }
   }
-  
+}
+
+
+footer {
+  background-color: #4B6468; 
+}
+
+footer a,
+footer a:visited,
+footer a:hover,
+footer a:active {
+  color: #E1EFF6; 
+  text-decoration: underline; 
+}
