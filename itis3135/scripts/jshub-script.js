@@ -27,6 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const tip = data.tips[Math.floor(Math.random() * data.tips.length)];
             tipOutput.textContent = tip;
           })
+          //error catching 
           .catch(() => {
             tipOutput.textContent = "Failed to load tip.";
           });
